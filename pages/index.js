@@ -28,8 +28,8 @@ export default function Home() {
       
       <section className='max-w-7xl mx-auto px-16'>
           <div className='flex mt-10'>
-          <div className='w-6/12'><img src='/blog3.jpeg' className='h-80 w-full'/></div>
-        <div className='w-6/12 bg-gray-100 px-5 py-5'>
+          <div className='w-6/12'><Image src='/blog3.jpeg' height={400} width={600} alt='blog-image'/></div>
+        <div className='w-6/12 bg-gray-100 px-5 py-5 h-96'>
             <div className='flex justify-between items-center'>
                <div className='flex space-x-5'>
                  <p className='flex items-center space-x-1'>
@@ -50,10 +50,10 @@ export default function Home() {
             <div className='mt-5 font-sans text-gray-800 space-y-5'>
                <p className='font-sans text-lg text-gray-800'>Having a true, good friend is one of the best things in life.
                  It feels great when you know you have someone you can trust and consider a brother or sister.
-                 Perhaps that's why they say your friends are the family you choose.
+                 Perhaps thats why they say your friends are the family you choose.
                </p>
 
-               <p className='font-sans text-lg text-gray-800'>However it's not always easy to tell if a friendship is geniue.
+               <p className='font-sans text-lg text-gray-800'>However its not always easy to tell if a friendship is geniue.
                  What follows are a few signs of a good friend.
                </p>
 

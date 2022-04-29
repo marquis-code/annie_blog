@@ -4,7 +4,7 @@ import bcrypt from 'bcrypt';
 
 dbConnect();
 
-export default async (req, res) => {
+export default function handler (req, res) {
   const {method, body} = req;
   if(method === 'POST') {
     try {
