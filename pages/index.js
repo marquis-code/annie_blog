@@ -14,10 +14,17 @@ const Home = ({ posts = [] }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
          <div className="relative">
-           <img src='/blog4.jpeg' className="w-full" alt="blog-image"  />
+           <Image
+              src="/blog4.jpeg"
+              height="100%"
+              width="100%"
+              alt="blog-image"
+              objectFit="cover"
+              layout="responsive"
+           />
            <div className="absolute z-50 top-10 md:top-20 md:left-3 opacity-70 text-white font-black p-2 space-y-3">
               <h1 className="md:text-5xl font-sans text-2xl font-bold tracking-wide text-center text-gray-900">Welcome to Annie&#39;s Blog</h1>
-              <p className="font-sans font-medium text-base text-center text-teal-200">Explore. Learn. Publish</p>
+              <p className="font-sans font-bold text-base text-center text-gray-700">Explore. Learn. Publish</p>
          </div>
          </div>
          <h1 className="font-serif py-3 border-t font-semibold text-sm text-center text-gray-800 uppercase">Trending on Annie Blog</h1>
