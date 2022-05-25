@@ -77,7 +77,7 @@ const UserBlogPost = () => {
             </div>
         </section>
         <div className='bg-black py-3 space-y-3 p-3'>
-              <h1 className='text-white font-semibold text-lg font-mono'>Annie's Blog</h1>
+              <h1 className='text-white font-semibold text-lg font-mono'>Annie&#39;s Blog</h1>
               <div className='flex space-x-4'>
                 <Link href='/about'>
                     <a className='font-medium text-sm text-white'>About</a>

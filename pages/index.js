@@ -9,14 +9,14 @@ const Home = ({ posts = [] }) => {
   return (
     <div>
       <Head>
-        <title>Home - Annie's blog</title>
+        <title>Home - Annie&#39;s blog</title>
         <meta name="description" content="welcome to annie's blog" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
          <div className="relative">
            <img src='/blog4.jpeg' className="w-full" alt="blog-image"  />
            <div className="absolute z-50 top-10 md:top-20 md:left-3 opacity-70 text-white font-black p-2 space-y-3">
-              <h1 className="md:text-5xl font-sans text-2xl font-bold tracking-wide text-center text-gray-900">Welcome to Annie's Blog</h1>
+              <h1 className="md:text-5xl font-sans text-2xl font-bold tracking-wide text-center text-gray-900">Welcome to Annie&#39;s Blog</h1>
               <p className="font-sans font-medium text-base text-center text-teal-200">Explore. Learn. Publish</p>
          </div>
          </div>
@@ -84,7 +84,7 @@ const Home = ({ posts = [] }) => {
       )}
     </section>
     <div className='bg-black py-3 space-y-3 p-3 mt-6 flex justify-center items-center flex-col'>
-              <h1 className='text-white font-semibold text-lg font-mono'>Annie's Blog</h1>
+              <h1 className='text-white font-semibold text-lg font-mono'>Annie&#39;s Blog</h1>
               <div className='flex space-x-4'>
                 <Link href='/about'>
                     <a className='font-medium text-sm text-white'>About</a>

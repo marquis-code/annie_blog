@@ -3,7 +3,7 @@ import Post from '../../../models/Post';
 
 dbConnect();
 
-export default async (req, res) => {
+export default async function handler (req, res) {
     const {method, body} = req;
     const {id} = req.query;
 

@@ -3,7 +3,7 @@ import ApprovedUser from '../../models/ApprovedUser';
 
 dbConnect();
 
- export default async (req, res) => {
+ export default async function handler (req, res) {
   const {method, body} = req;
   if(method === 'POST') {
     try {

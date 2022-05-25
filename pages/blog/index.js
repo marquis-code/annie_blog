@@ -25,7 +25,7 @@ const BlogPosts = ({ posts = [] }) => {
   return (
     <div>
       <Head>
-        <title>Home - Annie's blog</title>
+        <title>Home - Annie&#39;s blog</title>
         <meta name="description" content="welcome to annie's blog" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

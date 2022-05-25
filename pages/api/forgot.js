@@ -15,7 +15,7 @@ const auth = {
   
   let transporter = nodemailer.createTransport(nodemailerMailgun(auth));
 
-export default async () => {
+export default async function handler (req, res) {
     const {method, body} = req;
 
     if(method === 'POST'){
