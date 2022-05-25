@@ -1,5 +1,6 @@
 import {useState} from 'react';
 import {handleAdminAccess} from '../../components/endpoints';
+// import router from 'next/router';
 
 const Signin = () => {
     const [user, setUser] = useState({
@@ -16,7 +17,9 @@ const Signin = () => {
         console.log(formData);
         handleAdminAccess(formData)
         .then((response) => {
-           console.log(response.data)
+            const {token} = response.data
+           localStorage.setItem('token', token);
+           console.log('Welcome-back')
         }).catch((error) => {
           console.log(error.response);
         })

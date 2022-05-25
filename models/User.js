@@ -1,6 +1,13 @@
 import mongoose from 'mongoose';
 
 const UserSchema =  new mongoose.Schema({
+    username : {
+      type : String,
+      unique : true,
+      trim : true,
+      lowercase : true,
+      required:[true, 'Username is required']
+    },
     email: {
         type: String,
         unique: true,
@@ -20,6 +27,17 @@ const UserSchema =  new mongoose.Schema({
         select: false,
         maxlength:200,
         unique:true
+    },
+    resetPasswordToken: {
+        type: String,
+        default: ''
+    },
+    expireToken : {
+        type : Date
+    },
+    role : {
+        type :  Number,
+        default : 0
     }
 }, {
     timestamps : true
